@@ -160,8 +160,7 @@ public void actionPerformed(ActionEvent ae){ //overide cz when we an interface w
 public static void main(String[] args) {
         new Server();
         
-        try {
-            @SuppressWarnings("resource")
+       try {
             ServerSocket skt = new ServerSocket(6001);
             while(true) {
                 Socket s = skt.accept();
